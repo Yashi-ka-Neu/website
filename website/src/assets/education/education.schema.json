@@ -31,7 +31,14 @@
           "type": "string"
         }
       },
-      "required": ["role", "timeRange", "organization", "subject", "grade", "degree"]
+      "required": [
+        "role",
+        "timeRange",
+        "organization",
+        "subject",
+        "grade",
+        "degree"
+      ]
     },
     "TimeRange": {
       "type": "object",

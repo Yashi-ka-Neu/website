@@ -30,8 +30,8 @@
     {
       "role": "Masters Student",
       "organization": "University of Stuttgart",
-        "location": "Stuttgart",
-        "icon": "/src/assets/icon_university_stuttgart.png",
+      "location": "Stuttgart",
+      "icon": "/src/assets/icon_university_stuttgart.png",
       "timeRange": {
         "start": "2019-10-01",
         "end": "2024-09-30"

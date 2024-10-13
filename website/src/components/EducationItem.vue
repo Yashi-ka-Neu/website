@@ -5,8 +5,8 @@ import type {
   WorkExperience,
 } from '@/model/data_structures'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import Image from "primevue/image";
-import {formatTimeRange} from "../utils";
+import Image from 'primevue/image'
+import { formatTimeRange } from '../utils'
 
 defineProps<{
   educationData: Education
@@ -15,7 +15,14 @@ defineProps<{
 
 <template>
   <div class="item">
-    <i> <Image  :src="educationData.icon" alt="img" width="80px" style="background: white" ></Image> </i>
+    <i>
+      <Image
+        :src="educationData.icon"
+        alt="img"
+        width="80px"
+        style="background: white"
+      ></Image>
+    </i>
     <div class="details">
       <h3>
         {{ educationData.role }}
@@ -25,11 +32,16 @@ defineProps<{
       </h4>
       <h5>
         {{ formatTimeRange(educationData.timeRange) }}
-        <span v-if="educationData.location"> - {{educationData.location}}</span>
-        <br/>
-        Graduated with a {{ educationData.degree }} in {{ educationData.subject }} (grade: {{ educationData.grade }})
+        <span v-if="educationData.location">
+          - {{ educationData.location }}</span
+        >
+        <br />
+        Graduated with a {{ educationData.degree }} in
+        {{ educationData.subject }} (grade: {{ educationData.grade }})
       </h5>
-      <span v-if="educationData.description"> {{ educationData.description}} </span>
+      <span v-if="educationData.description">
+        {{ educationData.description }}
+      </span>
     </div>
   </div>
 </template>

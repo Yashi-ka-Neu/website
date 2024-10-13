@@ -6,8 +6,8 @@ import type {
   Project,
   WorkExperience,
 } from '@/model/data_structures'
-import WorkExperienceItem from "@/components/WorkExperienceItem.vue";
-import EducationItem from "@/components/EducationItem.vue";
+import WorkExperienceItem from '@/components/WorkExperienceItem.vue'
+import EducationItem from '@/components/EducationItem.vue'
 
 const workExperienceEntries =
   workExperienceData.work_experiences as WorkExperience[]
@@ -17,31 +17,31 @@ const educationEntries = educationData.education as Education[]
 <template>
   <main>
     <div class="sections-container">
-    <section>
-      <h2>Work Experience</h2>
-      <div class="grid">
-        <WorkExperienceItem
-          v-for="workExperience in workExperienceEntries"
-          :key="
-            workExperience.role +
-            workExperience.where +
-            workExperience.timeRange
-          "
-          :work-experience-data="workExperience"
-        />
-      </div>
-    </section>
+      <section>
+        <h2>Work Experience</h2>
+        <div class="grid">
+          <WorkExperienceItem
+            v-for="workExperience in workExperienceEntries"
+            :key="
+              workExperience.role +
+              workExperience.where +
+              workExperience.timeRange
+            "
+            :work-experience-data="workExperience"
+          />
+        </div>
+      </section>
 
-    <section>
-      <h2>Education</h2>
-      <div class="grid">
-        <EducationItem
-          v-for="education in educationEntries"
-          :key="education.role + education.where + education.timeRange"
-          :education-data="education"
-        />
-      </div>
-    </section>
+      <section>
+        <h2>Education</h2>
+        <div class="grid">
+          <EducationItem
+            v-for="education in educationEntries"
+            :key="education.role + education.where + education.timeRange"
+            :education-data="education"
+          />
+        </div>
+      </section>
     </div>
   </main>
 </template>

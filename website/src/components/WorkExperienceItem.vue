@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import type { Project, WorkExperience } from '@/model/data_structures'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
-import {formatTimeRange} from "@/utils";
-import Image from "primevue/image";
+import { formatTimeRange } from '@/utils'
+import Image from 'primevue/image'
 
 defineProps<{
   workExperienceData: WorkExperience
@@ -11,7 +11,14 @@ defineProps<{
 
 <template>
   <div class="item">
-    <i> <Image  :src="workExperienceData.icon" alt="img" width="80px" style="background: white" ></Image> </i>
+    <i>
+      <Image
+        :src="workExperienceData.icon"
+        alt="img"
+        width="80px"
+        style="background: white"
+      ></Image>
+    </i>
     <div class="details">
       <h3>
         {{ workExperienceData.role }}
@@ -21,9 +28,13 @@ defineProps<{
       </h4>
       <h5>
         {{ formatTimeRange(workExperienceData.timeRange) }}
-        <span v-if="workExperienceData.location"> - {{workExperienceData.location}}</span>
+        <span v-if="workExperienceData.location">
+          - {{ workExperienceData.location }}</span
+        >
       </h5>
-      <span v-if="workExperienceData.description"> {{ workExperienceData.description}} </span>
+      <span v-if="workExperienceData.description">
+        {{ workExperienceData.description }}
+      </span>
     </div>
   </div>
 </template>
