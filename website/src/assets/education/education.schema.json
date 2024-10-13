@@ -1,0 +1,60 @@
+{
+  "$defs": {
+    "Education": {
+      "type": "object",
+      "properties": {
+        "timeRange": {
+          "$ref": "#/$defs/TimeRange"
+        },
+        "role": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "organization": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        },
+        "grade": {
+          "type": "number"
+        },
+        "degree": {
+          "type": "string"
+        },
+        "subject": {
+          "type": "string"
+        }
+      },
+      "required": ["role", "timeRange", "organization", "subject", "grade", "degree"]
+    },
+    "TimeRange": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  },
+  "type": "object",
+  "title": "Education History",
+  "properties": {
+    "education": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/Education"
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+{
+  "projects": [
+    {
+      "title": "ManaWars",
+      "description": "A mobile action sidescrolling RPG.",
+      "icon": "/src/assets/icon_manawars.gif",
+      "favorite": true,
+      "size": "l",
+      "programming_language": ["Java/Kotlin"],
+      "when": {
+        "start": "2014-01-01",
+        "end": "2017-12-31"
+      },
+      "where": "Private"
+    },
+    {
+      "title": "BossShopPro",
+      "description": "Todo",
+      "icon": "/src/assets/icon_bossshoppro_2.gif",
+      "article": "https://todo.org",
+      "source_code": "https://github.com/Blackixx/BossShopPro",
+      "favorite": true,
+      "when": {
+        "start": "2014-01-01",
+        "end": "2017-12-31"
+      },
+      "size": "l",
+      "programming_language": ["Java/Kotlin"]
+    },
+    {
+      "title": "BossShopPro",
+      "description": "Todo",
+      "favorite": true,
+      "when": {
+        "start": "2014-01-01",
+        "end": "2017-12-31"
+      },
+      "size": "l",
+      "programming_language": ["Java/Kotlin", "Python", "JavaScript/TypeScript"]
+    },
+    {
+      "title": "BossShopPro",
+      "description": "Todo",
+      "favorite": true,
+      "when": {
+        "start": "2014-01-01",
+        "end": "2017-12-31"
+      },
+      "size": "l",
+      "programming_language": ["Java/Kotlin"]
+    },
+    {
+      "title": "BossShopPro",
+      "description": "Todo",
+      "favorite": true,
+      "when": {
+        "start": "2014-01-01",
+        "end": "2017-12-31"
+      },
+      "size": "l",
+      "programming_language": ["Java/Kotlin"]
+    },
+    {
+      "title": "BossShopPro",
+      "description": "Todo",
+      "favorite": true,
+      "when": {
+        "start": "2014-01-01",
+        "end": "2017-12-31"
+      },
+      "size": "l",
+      "programming_language": ["Java/Kotlin"]
+    },
+    {
+      "title": "BossShopPro",
+      "description": "Todo",
+      "favorite": true,
+      "when": {
+        "start": "2014-01-01",
+        "end": "2017-12-31"
+      },
+      "size": "l",
+      "programming_language": ["Java/Kotlin"]
+    }
+  ]
+}

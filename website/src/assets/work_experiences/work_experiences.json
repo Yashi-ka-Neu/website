@@ -1,0 +1,37 @@
+{
+  "work_experiences": [
+    {
+      "role": "Dual Student",
+      "organization": "Robert Bosch GmbH",
+      "location": "Stuttgart, Chicago, Renningen",
+      "icon": "/src/assets/icon_bosch.jpeg",
+      "timeRange": {
+        "start": "2016-10-01",
+        "end": "2019-09-30"
+      },
+      "description": "Working in the Field of Self-Driving Trucks, developing Algorithms for Radar Perception in Python and C++."
+    },
+    {
+      "role": "Algorithm and Perception Developer",
+      "icon": "/src/assets/icon_bosch.jpeg",
+      "organization": "Robert Bosch GmbH",
+      "location": "Stuttgart",
+      "timeRange": {
+        "start": "2019-10-01",
+        "end": "2022-03-31"
+      },
+      "description": "Working in the Field of Self-Driving Trucks, developing Algorithms for Radar Perception in Python and C++."
+    },
+    {
+      "role": "Software Engineer",
+      "icon": "/src/assets/icon_bosch.jpeg",
+      "organization": "Robert Bosch GmbH",
+      "location": "Stuttgart",
+      "timeRange": {
+        "start": "2022-04-01",
+        "end": "2024-11-30"
+      },
+      "description": "Working in the Field of Self-Driving Cars, developing CI/CD Pipelines, Python Tooling and embedded Software for Field Data Collection in C++"
+    }
+  ]
+}

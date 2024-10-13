@@ -1,0 +1,88 @@
+{
+  "$defs": {
+    "Project": {
+      "type": "object",
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string",
+          "format": "uri"
+        },
+        "favorite": {
+          "type": "boolean"
+        },
+        "size": {
+          "type": "string",
+          "enum": ["xs", "s", "m", "l", "xl"]
+        },
+        "programming_language": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "Java/Kotlin",
+              "Python",
+              "JavaScript/TypeScript",
+              "HTML",
+              "C",
+              "C++",
+              "Flutter/Dart",
+              "GoLang"
+            ]
+          }
+        },
+        "when": {
+          "$ref": "#/$defs/TimeRange"
+        },
+        "where": {
+          "type": "string"
+        },
+        "source_code": {
+          "type": "string",
+          "format": "uri"
+        },
+        "project_page": {
+          "type": "string",
+          "format": "uri"
+        },
+        "article": {
+          "type": "string",
+          "format": "uri"
+        },
+        "demo": {
+          "type": "string",
+          "format": "uri"
+        }
+      },
+      "required": ["title", "description", "size", "favorite", "when"]
+    },
+    "TimeRange": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  },
+  "type": "object",
+  "title": "Projects",
+  "properties": {
+    "project": {
+      "items": {
+        "$ref": "#/$defs/Project"
+      },
+      "type": "array"
+    }
+  }
+}

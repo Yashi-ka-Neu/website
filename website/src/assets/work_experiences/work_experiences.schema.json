@@ -1,0 +1,51 @@
+{
+  "$defs": {
+    "WorkExperience": {
+      "type": "object",
+      "properties": {
+        "timeRange": {
+          "$ref": "#/$defs/TimeRange"
+        },
+        "role": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "icon": {
+          "type": "string"
+        },
+        "organization": {
+          "type": "string"
+        },
+        "location": {
+          "type": "string"
+        }
+      },
+      "required": ["role", "timeRange", "organization", "description"]
+    },
+    "TimeRange": {
+      "type": "object",
+      "properties": {
+        "start": {
+          "type": "string",
+          "format": "date"
+        },
+        "end": {
+          "type": "string",
+          "format": "date"
+        }
+      }
+    }
+  },
+  "type": "object",
+  "title": "Work Experiences",
+  "properties": {
+    "experiences": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/WorkExperience"
+      }
+    }
+  }
+}
