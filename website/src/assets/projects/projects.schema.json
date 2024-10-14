@@ -10,29 +10,40 @@
           "type": "string"
         },
         "icon": {
-          "type": "string",
-          "format": "uri"
+          "type": "string"
         },
         "favorite": {
           "type": "boolean"
         },
         "size": {
           "type": "string",
-          "enum": ["xs", "s", "m", "l", "xl"]
+          "enum": [
+            "xs",
+            "s",
+            "m",
+            "l",
+            "xl"
+          ]
         },
         "programming_language": {
           "type": "array",
           "items": {
             "type": "string",
             "enum": [
-              "Java/Kotlin",
+              "Java",
+              "Kotlin",
               "Python",
-              "JavaScript/TypeScript",
+              "JavaScript",
+              "TypeScript",
               "HTML",
               "C",
               "C++",
               "Flutter/Dart",
-              "GoLang"
+              "GoLang",
+              "MatLab",
+              "R",
+              "Android",
+              "CI/CD"
             ]
           }
         },
@@ -57,9 +68,23 @@
         "demo": {
           "type": "string",
           "format": "uri"
+        },
+        "video": {
+          "type": "string",
+          "format": "uri"
+        },
+        "publication": {
+          "type": "string",
+          "format": "uri"
         }
       },
-      "required": ["title", "description", "size", "favorite", "when"]
+      "required": [
+        "title",
+        "description",
+        "size",
+        "favorite",
+        "when"
+      ]
     },
     "TimeRange": {
       "type": "object",
@@ -78,7 +103,7 @@
   "type": "object",
   "title": "Projects",
   "properties": {
-    "project": {
+    "projects": {
       "items": {
         "$ref": "#/$defs/Project"
       },

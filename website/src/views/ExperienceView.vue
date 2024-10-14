@@ -10,8 +10,17 @@ import WorkExperienceItem from '@/components/WorkExperienceItem.vue'
 import EducationItem from '@/components/EducationItem.vue'
 
 const workExperienceEntries =
-  workExperienceData.work_experiences as WorkExperience[]
-const educationEntries = educationData.education as Education[]
+  (workExperienceData.work_experiences as WorkExperience[])
+const educationEntries = (educationData.education as Education[])
+
+// sort work experience and education entries by date in descending order
+workExperienceEntries.sort((a, b) => {
+  return new Date(b.timeRange.end).getTime() - new Date(a.timeRange.end).getTime()
+})
+educationEntries.sort((a, b) => {
+  return new Date(b.timeRange.end).getTime() - new Date(a.timeRange.end).getTime()
+})
+
 </script>
 
 <template>
@@ -24,7 +33,7 @@ const educationEntries = educationData.education as Education[]
             v-for="workExperience in workExperienceEntries"
             :key="
               workExperience.role +
-              workExperience.where +
+              workExperience.organization +
               workExperience.timeRange
             "
             :work-experience-data="workExperience"
@@ -37,7 +46,7 @@ const educationEntries = educationData.education as Education[]
         <div class="grid">
           <EducationItem
             v-for="education in educationEntries"
-            :key="education.role + education.where + education.timeRange"
+            :key="education.role + education.organization + education.timeRange"
             :education-data="education"
           />
         </div>

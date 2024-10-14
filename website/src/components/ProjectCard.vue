@@ -3,6 +3,8 @@ import type { Project } from '@/model/data_structures'
 import { formatTimeRange } from '@/utils'
 import Card from 'primevue/card'
 import Button from 'primevue/button'
+import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
+import {faStar} from "@fortawesome/free-solid-svg-icons";
 
 defineProps<{
   projectData: Project
@@ -11,14 +13,24 @@ defineProps<{
 
 <template>
   <Card>
-    <template #header> </template>
-    <template #title>{{ projectData.title }}</template>
+    <template #header>
+    <h4 style="text-align: center" v-if="projectData.where">{{projectData.where}}</h4>
+    </template>
+    <template #title>{{ projectData.title }}
+    <FontAwesomeIcon v-if="projectData.favorite" :icon="faStar"></FontAwesomeIcon>
+    </template>
     <template #subtitle>
       {{ formatTimeRange(projectData.when) }}
       <div>
         <span
+          class="badge-size"
+        >
+          {{ projectData.size }}
+        </span>
+        <span
           v-if="projectData.programming_language"
           v-for="language in projectData.programming_language"
+          class="badge"
         >
           <span style="padding-right: 10px">{{ language }}</span>
         </span>
@@ -29,7 +41,7 @@ defineProps<{
         {{ projectData.description }}
       </p>
 
-      <img v-if="projectData.icon" alt="user header" :src="projectData.icon" />
+      <img v-if="projectData.icon" alt="user header" :src="projectData.icon" style="max-width: 350px" />
     </template>
     <template #footer>
       <div class="flex gap-4 mt-1">
@@ -39,7 +51,7 @@ defineProps<{
           target="_blank"
           title="Read Article"
         >
-          <Button>Read More</Button>
+          <span class="badge-link">Read More</span>
         </a>
         <a
           v-if="projectData.project_page"
@@ -47,7 +59,7 @@ defineProps<{
           target="_blank"
           title="Go to Project Page"
         >
-          <Button>Project Page</Button>
+          <span class="badge-link">Project Page</span>
         </a>
         <a
           v-if="projectData.source_code"
@@ -55,7 +67,31 @@ defineProps<{
           target="_blank"
           title="View Source Code"
         >
-          <Button>Source Code</Button>
+          <span class="badge-link">Source Code</span>
+        </a>
+        <a
+          v-if="projectData.demo"
+          :href="projectData.demo"
+          target="_blank"
+          title="Try It Out"
+        >
+          <span class="badge-link">Try It Out</span>
+        </a>
+        <a
+          v-if="projectData.video"
+          :href="projectData.video"
+          target="_blank"
+          title="Watch Video"
+        >
+          <span class="badge-link">Watch Video</span>
+        </a>
+        <a
+          v-if="projectData.publication"
+          :href="projectData.publication"
+          target="_blank"
+          title="Access Publication"
+        >
+          <span class="badge-link">Publication</span>
         </a>
       </div>
     </template>
@@ -71,5 +107,40 @@ defineProps<{
   padding-top: 0;
   background: var(--color-background-soft);
   border: 1px solid var(--color-border);
+  display: flex;
+  flex-direction: column;
 }
+
+
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  margin-right: 0.5em;
+  font-size: 0.75em;
+  font-weight: 600;
+  color: var(--color-text);
+  background-color: var(--color-border);
+  border-radius: 0.25rem;
+}
+.badge-size {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  margin-right: 0.5em;
+  font-size: 0.75em;
+  font-weight: 600;
+  color: var(--color-text);
+  background-color: var(--color-border-hover);
+  border-radius: 0.25rem;
+}
+
+.badge-link {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  margin-right: 0.5em;
+  font-size: 0.75em;
+  font-weight: 600;
+  border-radius: 0.25rem;
+}
+
+
 </style>

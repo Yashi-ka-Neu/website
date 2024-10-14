@@ -11,6 +11,8 @@ export interface Project {
   project_page?: string
   article?: string
   demo?: string
+  video?: string
+  publication?: string
 }
 
 export interface WorkExperience {
@@ -20,6 +22,7 @@ export interface WorkExperience {
   icon?: string
   organization: string
   location?: string
+  programming_language?: string[]
 }
 
 export interface Education {
@@ -32,6 +35,7 @@ export interface Education {
   grade: number
   degree: string
   subject: string
+  programming_language?: string[]
 }
 
 export interface TimeRange {

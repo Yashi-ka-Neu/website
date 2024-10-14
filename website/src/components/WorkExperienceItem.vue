@@ -35,6 +35,15 @@ defineProps<{
       <span v-if="workExperienceData.description">
         {{ workExperienceData.description }}
       </span>
+
+      <br/>
+      <span
+        v-if="workExperienceData.programming_language"
+        v-for="language in workExperienceData.programming_language"
+        class="badge"
+      >
+          <span style="padding-right: 10px">{{ language }}</span>
+        </span>
     </div>
   </div>
 </template>
@@ -107,5 +116,17 @@ i {
 
 .item:last-of-type:after {
   display: none;
+}
+
+
+.badge {
+  display: inline-block;
+  padding: 0.25em 0.5em;
+  margin-right: 0.5em;
+  font-size: 0.75em;
+  font-weight: 600;
+  color: var(--color-text);
+  background-color: var(--color-border);
+  border-radius: 0.25rem;
 }
 </style>
