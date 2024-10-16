@@ -2,13 +2,20 @@
 import type { Project } from '@/model/data_structures'
 import { formatTimeRange } from '@/utils'
 import Card from 'primevue/card'
-import Button from 'primevue/button'
 import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
 import {faStar} from "@fortawesome/free-solid-svg-icons";
 
-defineProps<{
+const props = defineProps<{
   projectData: Project
 }>()
+
+const emit = defineEmits<{
+  (e: 'select_article', articlePath: string, title: string): void;
+  (e: 'select_videos', videos: string[], title: string): void;
+}>();
+
+const videoOrVideos: string = props.projectData.videos ? (props.projectData.videos.length > 1 ? 'Videos' : 'Video') : "No Video";
+
 </script>
 
 <template>
@@ -47,11 +54,19 @@ defineProps<{
       <div class="flex gap-4 mt-1">
         <a
           v-if="projectData.article"
-          :href="projectData.article"
+          @click="emit('select_article', projectData.article, projectData.title)"
           target="_blank"
           title="Read Article"
         >
           <span class="badge-link">Read More</span>
+        </a>
+        <a
+          v-if="projectData.publication"
+          :href="projectData.publication"
+          target="_blank"
+          title="Access Publication"
+        >
+          <span class="badge-link">Publication</span>
         </a>
         <a
           v-if="projectData.project_page"
@@ -78,20 +93,12 @@ defineProps<{
           <span class="badge-link">Try It Out</span>
         </a>
         <a
-          v-if="projectData.video"
-          :href="projectData.video"
+          v-if="projectData.videos"
+          @click="emit('select_videos', projectData.videos, projectData.title + ' ' + videoOrVideos)"
           target="_blank"
           title="Watch Video"
         >
-          <span class="badge-link">Watch Video</span>
-        </a>
-        <a
-          v-if="projectData.publication"
-          :href="projectData.publication"
-          target="_blank"
-          title="Access Publication"
-        >
-          <span class="badge-link">Publication</span>
+          <span class="badge-link">Watch {{videoOrVideos}}</span>
         </a>
       </div>
     </template>

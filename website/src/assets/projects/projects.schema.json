@@ -63,15 +63,17 @@
         },
         "article": {
           "type": "string",
-          "format": "uri"
         },
         "demo": {
           "type": "string",
           "format": "uri"
         },
-        "video": {
-          "type": "string",
-          "format": "uri"
+        "videos": {
+          "type": "array",
+          "items": {
+            "description": "Youtube Video ID",
+            "type": "string"
+          }
         },
         "publication": {
           "type": "string",

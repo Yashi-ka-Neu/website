@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import type {
   Education,
-  Project,
-  WorkExperience,
 } from '@/model/data_structures'
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import Image from 'primevue/image'
 import { formatTimeRange } from '../utils'
 

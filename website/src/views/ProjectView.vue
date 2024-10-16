@@ -3,7 +3,9 @@ import projectsData from '@/assets/projects/projects.json'
 import type { Project } from '@/model/data_structures'
 import ProjectCard from '@/components/ProjectCard.vue'
 import MultiSelect from "primevue/multiselect";
-import {computed, ref} from "vue";
+import Dialog from "primevue/dialog";
+import {computed, type Ref, ref} from "vue";
+import MarkdownArticle from "@/components/MarkdownArticle.vue";
 
 const projects = projectsData.projects as Project[]
 
@@ -16,6 +18,14 @@ const favorites = ['Yes', 'No'].map(fav => ({ label: fav, value: fav }))
 const selectedSizes = ref<string[]>([])
 const selectedLanguages = ref<string[]>([])
 const selectedFavorites = ref<string[]>([])
+
+const selectedArticle: Ref<string|undefined> = ref<string|undefined>(undefined)
+const isArticleSelected: Ref<boolean> = ref<boolean>(false);
+const articleTitle: Ref<string> = ref<string>('')
+
+const selectedVideos: Ref<string[]> = ref<string[]>([])
+const isVideosSelected: Ref<boolean> = ref<boolean>(false);
+const videosTitle: Ref<string> = ref<string>('')
 
 
 const filteredProjects = computed(() => {
@@ -45,11 +55,41 @@ const filteredProjects = computed(() => {
   return result
 })
 
+function openArticle(articlePath: string, title: string) {
+  selectedArticle.value = articlePath;
+  isArticleSelected.value = true;
+  articleTitle.value = title;
+}
+
+function openVideos(videos: string[], title: string) {
+  selectedVideos.value = videos;
+  isVideosSelected.value = true;
+  videosTitle.value = title;
+}
 
 </script>
 
 <template>
   <main class="full-width">
+
+
+    <Dialog v-model:visible="isArticleSelected" :modal="true" :style="{ width: '90vw', height: '90vh' }" :closable="true">
+      <template #header>
+        <h3>{{ articleTitle }}</h3>
+      </template>
+        <MarkdownArticle :article-path="selectedArticle!"/>
+    </Dialog>
+
+    <Dialog v-model:visible="isVideosSelected" :modal="true" :style="{ width: '600px', height: '80vh' }" :closable="true">
+      <template #header>
+        <h3>{{ videosTitle }}</h3>
+      </template>
+
+      <div>
+        <iframe v-for="videoId in selectedVideos" width="560" height="315" :src="'https://www.youtube.com/embed/' + videoId" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </Dialog>
+
     <h2>Projects</h2>
     <div class="filters">
       <MultiSelect v-model="selectedSizes" :options="sizes" placeholder="Select sizes" optionLabel="label" optionValue="value" multiple />
@@ -61,6 +101,8 @@ const filteredProjects = computed(() => {
         v-for="project in filteredProjects"
         :key="project.title"
         :project-data="project"
+        @select_article="openArticle"
+        @select_videos="openVideos"
       />
     </div>
   </main>

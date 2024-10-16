@@ -19,7 +19,9 @@
       "source_code": "https://github.com/MetaConfigurator/meta-configurator",
       "project_page": "https://github.com/MetaConfigurator/meta-configurator",
       "demo": "https://metaconfigurator.github.io/meta-configurator/data",
-      "video": "https://www.youtube.com/watch?v=1HT0Xb8tGUI"
+      "videos": [
+        "1HT0Xb8tGUI"
+      ]
     },
     {
       "title": "ManaWars (Mobile Game)",
@@ -36,13 +38,16 @@
         "start": "2014-01-01",
         "end": "2017-12-31"
       },
-      "video": "https://www.youtube.com/watch?v=py2VAddQ08c"
+      "videos": [
+        "py2VAddQ08c"
+      ],
+      "article": "/src/assets/articles/manawars/article.md"
     },
     {
       "title": "MesaReplay (Tool Extension)",
       "description": "Enables caching simulations of mesa (simulation framework) models, persisting them on the file system and replaying them later.",
       "favorite": true,
-      "size": "s",
+      "size": "xs",
       "programming_language": [
         "Python"
       ],
@@ -72,13 +77,14 @@
       "title": "GraphQLQueryNameConsistency (Deep Learning)",
       "description": "Deep Learning project to detect whether a GraphQL (name, query) pair is consistent.",
       "favorite": false,
+      "icon": "/src/assets/icon_graphqlconsistency.png",
       "size": "s",
       "programming_language": [
         "Python"
       ],
       "when": {
         "start": "2023-06-13",
-        "end": "2023-07-2ß"
+        "end": "2023-07-20"
       },
       "source_code": "https://github.com/Logende/GraphQLQueryNameConsistency"
     },
@@ -103,7 +109,7 @@
       "title": "BossShopPro (Plugin)",
       "description": "One of the most player-friendly and multifunctional server-side Minecraft GUI plugins. It has over 600,000 Downloads combined. It has a dozen of Add-Ons, enabled due to its versatile API.",
       "icon": "/src/assets/icon_bossshoppro.gif",
-      "article": "https://todo.org",
+      "article": "/src/assets/articles/bossshoppro/article.md",
       "source_code": "https://github.com/Blackixx/BossShopPro",
       "favorite": true,
       "when": {
@@ -115,13 +121,18 @@
         "Java"
       ],
       "project_page": "https://www.spigotmc.org/resources/222/",
-      "video": "https://www.youtube.com/watch?v=SgTBXMgOLk4"
+      "videos": [
+        "SgTBXMgOLk4",
+        "vx7YC4GCao4",
+        "ahyp1uYGgp8",
+        "XcafjVUTN8s"
+      ]
     },
     {
       "title": "EarthGames (Minigame)",
       "description": "A Minecraft Minigame that I have invented, developed, and published to thousands of players via the Snapcraft gaming network from the Netherlands. At its peak, different Youtubers, who now have over 50 Million subscribers combined, have played and enjoyed EarthGames.",
       "icon": "/src/assets/icon_earthgames.png",
-      "article": "https://todo.org",
+      "article": "/src/assets/articles/earthgames/article.md",
       "favorite": true,
       "when": {
         "start": "2012-10-19",
@@ -131,14 +142,23 @@
       "programming_language": [
         "Java"
       ],
-      "video": "https://www.youtube.com/watch?v=6CYQ7yjqaNQ",
+      "videos": [
+        "6CYQ7yjqaNQ",
+        "923TrDl9CCk",
+        "Z2CHEuWZghk",
+        "5qIvDhrDQL0",
+        "AcCq3S5uSII",
+        "MEv5a-yioV4",
+        "teZhuoXXMFs",
+        "Z7DJub7N3oU"
+      ],
       "where": "Snapcraft/Fironus"
     },
     {
       "title": "ZombieV (Minigame)",
       "description": "ZombieV is a Minecraft Minigame that I have invented, developed, and published to thousands of players via the Snapcraft gaming network from the Netherlands. The concept is simple: players fight together against pre-defined waves of crazy enemies. By killing those enemies, they get money, which they can invest and stronger armor, weapons, and some other special perks. Besides a lot of crazy fun elements (items like grenades, an interactive map which, for example, changes over the course of the game, and boss waves) players could also use the equipment they unlocked to challenge other players in a 1v1 fight.",
       "icon": "/src/assets/icon_zombiev.png",
-      "article": "https://todo.org",
+      "article": "/src/assets/articles/zombiev/article.md",
       "favorite": true,
       "when": {
         "start": "2012-10-19",
@@ -148,7 +168,9 @@
       "programming_language": [
         "Java"
       ],
-      "video": "https://www.youtube.com/watch?v=IZhnWrk9BYc",
+      "videos": [
+        "IZhnWrk9BYc"
+      ],
       "where": "Snapcraft/Fironus"
     },
     {
@@ -171,7 +193,6 @@
       "title": "BSPEditor (Web Tool)",
       "description": "BossShopProEditor is a web application that makes it easier to configure shops of the BossShopPro Java plugin.",
       "icon": "/src/assets/icon_bspeditor.png",
-      "article": "https://todo.org",
       "favorite": false,
       "when": {
         "start": "2018-09-30",
@@ -184,7 +205,8 @@
       ],
       "project_page": "https://www.spigotmc.org/resources/bossshoppro-editor.64777/",
       "source_code": "https://github.com/Logende/BossShopProEditor",
-      "demo": "https://logende.github.io/BossShopProEditor/#/"
+      "demo": "https://logende.github.io/BossShopProEditor/#/",
+      "article": "/src/assets/articles/bsp_editor/article.md"
     },
     {
       "title": "BSPConfigure (Desktop Tool)",
@@ -214,7 +236,10 @@
       "programming_language": [
         "Java"
       ],
-      "video": "https://www.youtube.com/watch?v=uvSfB7L9z-Q"
+      "videos": [
+        "uvSfB7L9z-Q"
+      ],
+      "article": "/src/assets/articles/manawar/article.md"
     },
     {
       "title": "War (Minigame)",
@@ -229,7 +254,7 @@
         "start": "2012-05-01",
         "end": "2013-06-18"
       },
-      "article": "https://todo.org"
+      "article": "/src/assets/articles/war/article.md"
     },
     {
       "title": "LimitedUses (BSP Addon)",
@@ -322,7 +347,7 @@
     },
     {
       "title": "PlayerPoints (Plugin)",
-      "description": "A server-side Minecraft plugin that introduces a second currency: Points. Has more than 150,000 Downloads.",
+      "description": "A server-side Minecraft plugin that introduces a second currency: Points. Has more than 150,000 Downloads. Now maintained by Mitsugaru.",
       "favorite": false,
       "size": "s",
       "programming_language": [

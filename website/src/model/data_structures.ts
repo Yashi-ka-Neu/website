@@ -11,7 +11,7 @@ export interface Project {
   project_page?: string
   article?: string
   demo?: string
-  video?: string
+  videos?: string[]
   publication?: string
 }
 
