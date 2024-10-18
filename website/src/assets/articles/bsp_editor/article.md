@@ -14,10 +14,10 @@ That way, many servers became commercialized and interested in high-quality plug
 
 I, personally, at that time, was just one of many players playing Minecraft just for the sake of having fun.
 I was developing plugins, mainly, for my own server, but also sharing them publicly, because I liked the positive attention I was getting from other server owners and because I felt it would be valuable to learn how to code.
-One of those plugins I developed and publicly shared was BossShop(Pro), which I extensively describe [here](https://logende.org/portfolio-archive/bossshoppro/).
+One of those plugins I developed and publicly shared was BossShop(Pro), which I extensively describe [here](https://logende.org/portfolio-archive/bossshoppro/).
 While BossShop(Pro) was and still is very powerful, it also is complex and, especially for beginners, can be complicated to work with: it provides tons of options for server administrators to set certain things up, using a configuration YAML file.
 Therefore, people should have some familiarity with config files in general, and also take some time to learn how the BossShop(Pro) configs are supposed to look like.
-An extensive [Wiki page](https://www.spigotmc.org/wiki/bossshoppro/) with an [introduction](https://www.spigotmc.org/wiki/bossshoppro/), [examples](https://www.spigotmc.org/wiki/bossshoppro-examples/) and a [FAQ page](https://www.spigotmc.org/wiki/bossshoppro-faq-and-help/) help people learn how to configure the plugin.
+An extensive [Wiki page](https://www.spigotmc.org/wiki/bossshoppro/) with an [introduction](https://www.spigotmc.org/wiki/bossshoppro/), [examples](https://www.spigotmc.org/wiki/bossshoppro-examples/) and a [FAQ page](https://www.spigotmc.org/wiki/bossshoppro-faq-and-help/) help people learn how to configure the plugin.
 
 ### BossShopConfigure
 
@@ -26,43 +26,63 @@ Realizing that an extensive graphical user interface would be way more intuitive
 Additionally, this GUI can have the option to auto-complete choices of the user, as well as list the different options one has for a certain config setting.
 
 The resulting GUI tool is shown in the following video.
-I named it [BossShopConfigure](https://bukkit.org/threads/gui-admin-bossshopconfigure-shop-config-editor.222404/).
+I named it [BossShopConfigure](https://bukkit.org/threads/gui-admin-bossshopconfigure-shop-config-editor.222404/).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ahyp1uYGgp8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-[caption id="attachment_502" align="alignnone" width="810"][![](/src/assets/articles/bsp_editor/bspc_overview.png)](https://logende.org/wp-content/uploads/2021/01/bsc-2-1.png)BossShopConfigure GUI tool - Main menu with entry "BossSword" of shop "BuyShop" being selected[/caption]
+[<img src="/src/assets/articles/bsp_editor/bspc_overview.png" width="600"/>](/src/assets/articles/bsp_editor/bspc_overview.png)
 
-[caption id="attachment_501" align="alignnone" width="810"][![](/src/assets/articles/bsp_editor/bspc_item.png)](https://logende.org/wp-content/uploads/2021/01/BSC-2.png)BossShopConfigure GUI tool - ItemData editor menu[/caption]
+_BossShopConfigure GUI tool - Main menu with entry "BossSword" of shop "BuyShop" being selected_
 
-[caption id="attachment_499" align="alignnone" width="352"][![](/src/assets/articles/bsp_editor/bspc_result.png)](https://logende.org/wp-content/uploads/2021/01/bsc-2-3.png)The resulting "BossSword" entry within the BuyShop menu in the game[/caption]
+[<img src="/src/assets/articles/bsp_editor/bspc_item.png" width="600"/>](/src/assets/articles/bsp_editor/bspc_item.png)
+
+_BossShopConfigure GUI tool - ItemData editor menu_
+
+[<img src="/src/assets/articles/bsp_editor/bspc_result.png" width="300"/>](/src/assets/articles/bsp_editor/bspc_result.png)
+
+_The resulting "BossSword" entry within the BuyShop menu in the game_
 
 ### BossShopConfigureX
 
 BossShopConfigure was alright, but it was missing some features that I wanted, such as advanced help menus, auto-completion of material names and other enum values, and some more.
 Therefore, I decided to develop something much more sophisticated and advanced than BossShopConfigure.
-The result was [BossShopConfigureX](https://www.spigotmc.org/threads/bossshop-gui-configuration-setup-tool.150313/).
+The result was [BossShopConfigureX](https://www.spigotmc.org/threads/bossshop-gui-configuration-setup-tool.150313/).
 The most distinct change of the new tool was, that it would require and use a "Minecraft server jar file" provided by the user of the tool.
 The tool would then hook into the API of this server jar file and retrieve a lot of information from there, such as a list of available material names, enchantments, potion types, and more.
 Therefore, whenever new content would be added to Minecraft, instead of the tool needing to be updated to include the new content, the tool would, automatically, always be up-to-date with whatever server version the user of the tool would provide.
 This is the kind of robustness and independence I want my software to have: not having to update it, whenever somewhere else something is changed.
 
-[caption id="attachment_510" align="alignnone" width="900"][![](/src/assets/articles/bsp_editor/bspc2_overview.png)](https://logende.org/wp-content/uploads/2021/01/Main-configuration.png)BossShopConfigureX GUI tool - Main menu[/caption]
+[<img src="/src/assets/articles/bsp_editor/bspc2_overview.png" width="800"/>](/src/assets/articles/bsp_editor/bspc2_overview.png)
 
-[caption id="attachment_511" align="alignnone" width="900"][![](/src/assets/articles/bsp_editor/bspc2_shop.png)](https://logende.org/wp-content/uploads/2021/01/Shop-with-inventory-view.png)BossShopConfigureX GUI tool - Shop with inventory view[/caption]
+_BossShopConfigureX GUI tool - Main menu_
 
-[caption id="attachment_505" align="alignnone" width="742"][![](/src/assets/articles/bsp_editor/bspc2_shopitem.png)](https://logende.org/wp-content/uploads/2021/01/BossSword.png)BossShopConfigureX GUI tool - Menu entry editor[/caption]
+[<img src="/src/assets/articles/bsp_editor/bspc2_shop.png" width="800"/>](/src/assets/articles/bsp_editor/bspc2_shop.png)
 
-[caption id="attachment_504" align="alignnone" width="900"][![](/src/assets/articles/bsp_editor/bspc2_item.png)](https://logende.org/wp-content/uploads/2021/01/BossSword-MenuItem.png)BossShopConfigureX GUI tool - ItemData editor[/caption]
+_BossShopConfigureX GUI tool - Shop with inventory view_
 
-[caption id="attachment_508" align="alignnone" width="537"][![](/src/assets/articles/bsp_editor/bspc2_itemdata_potion.png)](https://logende.org/wp-content/uploads/2021/01/easy-special-creation.png) BossShopConfigureX GUI tool - Easy choice selection feature (instead of plain text)[/caption]
+[<img src="/src/assets/articles/bsp_editor/bspc2_shopitem.png" width="600"/>](/src/assets/articles/bsp_editor/bspc2_shopitem.png)
 
-[caption id="attachment_515" align="alignnone" width="290"][![](/src/assets/articles/bsp_editor/bspc2_autocomplete.png)](https://logende.org/wp-content/uploads/2021/01/Autofill-material-names.png)BossShopConfigureX GUI tool - Auto-completion feature[/caption]
+_BossShopConfigureX GUI tool - Menu entry editor_
 
-[caption id="attachment_514" align="alignnone" width="661"][![](/src/assets/articles/bsp_editor/bspc2_tooltip.png)](https://logende.org/wp-content/uploads/2021/01/advanced-help-menu.png)BossShopConfigureX GUI tool - Advanced help menu[/caption]
+[<img src="/src/assets/articles/bsp_editor/bspc2_item.png" width="700"/>](/src/assets/articles/bsp_editor/bspc2_item.png)
+
+_BossShopConfigureX GUI tool - ItemData editor_
+
+[<img src="/src/assets/articles/bsp_editor/bspc2_itemdata_potion.png" width="350"/>](/src/assets/articles/bsp_editor/bspc2_itemdata_potion.png)
+
+_BossShopConfigureX GUI tool - Easy choice selection feature (instead of plain text)_
+
+[<img src="/src/assets/articles/bsp_editor/bspc2_autocomplete.png" width="200"/>](/src/assets/articles/bsp_editor/bspc2_autocomplete.png)
+
+_BossShopConfigureX GUI tool - Auto-completion feature_
+
+[<img src="/src/assets/articles/bsp_editor/bspc2_tooltip.png" width="350"/>](/src/assets/articles/bsp_editor/bspc2_tooltip.png)
+
+_BossShopConfigureX GUI tool - Advanced help menu_
 
 Note that after some time of maintaining BossShopConfigureX, I released the premium version of my plugin, called BossShopPro.
-For that premium version, I also provided a slightly adjusted version of BossShopConfigureX, which I called [BossShopProConfigure](https://www.spigotmc.org/resources/bossshopproconfigure-configuration-and-setup-tool.28791/).
+For that premium version, I also provided a slightly adjusted version of BossShopConfigureX, which I called [BossShopProConfigure](https://www.spigotmc.org/resources/bossshopproconfigure-configuration-and-setup-tool.28791/).
 
 ### BossShopProEditor
 
@@ -79,26 +99,34 @@ Copy some item definition to somewhere else?
 Copy and paste.
 One can simply be a lot faster with the raw configuration file.
 Seeing the pros and cons of both concepts, I decided that the ideal configuration tool would be one that merges both worlds.
-The idea of [BossShopProEditor](https://www.spigotmc.org/resources/bossshoppro-editor.64777/) was born.
+The idea of [BossShopProEditor](https://www.spigotmc.org/resources/bossshoppro-editor.64777/) was born.
 During my internship, I was collaborating a lot with a colleague and friend of mine, who is extremely good at web development and I liked working with him a lot.
 It felt very productive and creative.
 Therefore, I proposed to him to develop BossShopProEditor as a joint project.
 He would focus on the VueJs components in the "GUI" half of the application and I would focus on the configuration half of the application and about linking both components together.
 This is exactly would we did, resulting in a quite intuitive and powerful, yet surprisingly simple application.
 
-[caption id="attachment_516" align="alignnone" width="900"][![](/src/assets/articles/bsp_editor/bspe_main.png)](https://logende.org/wp-content/uploads/2021/01/bspw1.png)BossShopProEditor web app - main page with the "Configuration" section and the "Configuration Assistant" section[/caption]
+[<img src="/src/assets/articles/bsp_editor/bspe_main.png" width="800"/>](/src/assets/articles/bsp_editor/bspe_main.png)
 
-[caption id="attachment_517" align="alignnone" width="900"][![](/src/assets/articles/bsp_editor/bspe_shopitem.png)](https://logende.org/wp-content/uploads/2021/01/bspw2.png)BossShopProEditor web app - "Configuration Assistant" dynamically shows the currently selected entry of the config[/caption]
+_BossShopProEditor web app - main page with the "Configuration" section and the "Configuration Assistant" section_
 
-[caption id="attachment_518" align="alignnone" width="701"][![](/src/assets/articles/bsp_editor/bspe_autocomplete.png)](https://logende.org/wp-content/uploads/2021/01/bspw3.png)BossShopProEditor web app - Neat features, such as auto-completion[/caption]
+_[<img src="/src/assets/articles/bsp_editor/bspe_shopitem.png" width="600"/>](src/assets/articles/bsp_editor/bspe_shopitem.png)
 
-[caption id="attachment_519" align="alignnone" width="756"][![](/src/assets/articles/bsp_editor/bspe_colorcode.png)](https://logende.org/wp-content/uploads/2021/01/bspw4.png)BossShopProEditor web app - Preview of formatting[/caption]
+BossShopProEditor web app - "Configuration Assistant" dynamically shows the currently selected entry of the config_
+
+_[<img src="/src/assets/articles/bsp_editor/bspe_autocomplete.png" width="350"/>](/src/assets/articles/bsp_editor/bspe_autocomplete.png)
+
+BossShopProEditor web app - Neat features, such as auto-completion_
+
+[_<img src="/src/assets/articles/bsp_editor/bspe_colorcode.png" width="500"/>](/src/assets/articles/bsp_editor/bspe_colorcode.png)
+
+BossShopProEditor web app - Preview of formatting_
 
 ### Honorable mentions
 
 Besides my own tooling efforts for BossShop(Pro), there are some more tools out there, which other developers have created.
-For example, on the [mc-market.org website](https://www.mc-market.org/search/35630/?q=BossShop&o=relevance), there are developers selling their own configurator, as well as people selling their service of configuring shops, as well as pre-configured shops.
+For example, on the [mc-market.org website](https://www.mc-market.org/search/35630/?q=BossShop&o=relevance), there are developers selling their own configurator, as well as people selling their service of configuring shops, as well as pre-configured shops.
 
-Additionally, on Spigot other users provide tools that make setting up shops easier, such as this one: [Link](https://www.spigotmc.org/resources/gui-creation-tool-make-gui-crate-shop-formats-in-game-in-seconds.51660/).
+Additionally, on Spigot other users provide tools that make setting up shops easier, such as this one: [Link](https://www.spigotmc.org/resources/gui-creation-tool-make-gui-crate-shop-formats-in-game-in-seconds.51660/).
 
 Last but not least, my BossShopPro addon "[BSP ItemShops](https://www.spigotmc.org/resources/itemshops-bsp-create-fancy-gui-shops-with-minimal-effort.26640/)" makes setting up very standard shops where only regular items are sold, very easy.

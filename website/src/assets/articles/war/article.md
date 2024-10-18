@@ -1,5 +1,5 @@
 War (also known as NeubyWar and later ZeubyWar) was a minigame for the computer game Minecraft, which I invented and developed (implemented as a Java plugin).
-The War plugin expanded the traditional gameplay of Minecraft by a *matchmaking* system (players can join a game lobby, get assigned to one of two teams, can vote for one of three randomly chosen maps, and when the countdown is over, finally get teleported to the battlefield), by a custom *currency* (money can be earned by damaging and killing enemies, as well as winning a match) and *custom weapons* and items with special effects (can be purchased with the money. Examples are grenades, sniper shot, mines, blindness bomb, machine gun, etc.).
+The War plugin expanded the traditional gameplay of Minecraft by a *matchmaking* system (players can join a game lobby, get assigned to one of two teams, can vote for one of three randomly chosen maps, and when the countdown is over, finally get teleported to the battlefield), by a custom *currency* (money can be earned by damaging and killing enemies, as well as winning a match) and *custom weapons* and items with special effects (can be purchased with the money. Examples are grenades, sniper shot, mines, blindness bomb, machine gun, etc.).
 
 It was the very first Minecraft minigame I developed and was very fun to play, but was not optimized for a broad range of average players and instead rather difficult to understand and get into as a beginner.
 I learned a lot about software development during the creation of this Minigame and I also learned a lot about user experience and accessibility.
@@ -63,7 +63,7 @@ Also, players had to look up the names of the special attacks using another comm
 This was not very intuitive and took time.
 To improve the situation, I wrote a custom Mod for the game Minecraft, which would add a graphical user interface for the player, where a player could browse through the different shop items (mainly attacks) and click a button to buy the corresponding item.
 This step improved the player experience for everyone having the mod, however, as the mod had to manually download and installed by the player, this was something many players simply did not do and it did not really increase the accessibility of the game.
-Too bad I did not have written the plugin [BossShop](https://logende.org/portfolio-archive/bossshoppro/) at this point.
+Too bad I did not have written the plugin [BossShop](https://logende.org/portfolio-archive/bossshoppro/) at this point.
 
 [caption id="attachment_431" align="alignnone" width="900"][![](/src/assets/articles/war/war_gui_mod.png)](https://logende.org/wp-content/uploads/2021/01/2012-08-05_14.39.45.png)Main menu of the War mod[/caption]
 [caption id="attachment_432" align="alignnone" width="900"][![](/src/assets/articles/war/war_gui_mod_2.png)](https://logende.org/wp-content/uploads/2021/01/2012-08-05_14.39.35.png)Special attacks, can be browsed through and bought via the War mod[/caption]
@@ -85,7 +85,7 @@ The texturepack made the stick look like an actual machinegun.
 
 The minigame was a lot of fun for everyone involved and I learned a lot through its development.
 Working with the game was such a creative time and it had so many features I have not even touched on this page.
-However, it was not optimized for a broad player base and due to its complexity, its accessibility was not as good, as in my other minigames ([EarthGames](https://logende.org/portfolio-archive/earthgames/) and [ZombieV](https://logende.org/portfolio-archive/zombiev/)). 
+However, it was not optimized for a broad player base and due to its complexity, its accessibility was not as good, as in my other minigames ([EarthGames](https://logende.org/portfolio-archive/earthgames/) and [ZombieV](https://logende.org/portfolio-archive/zombiev/)). 
 Because the other games were just more popular and more fun to work with, as, admittedly, the codebase of the War game was not very good, after some time I just stopped working on it and spent my time improving the other minigames.
 When we finally joined the Snapcraft network from the Netherlands, I did not port the War game to their server and instead brought EarthGames and ZombieV with me.
 This was the end of the (really fun) minigame.

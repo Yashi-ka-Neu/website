@@ -14,7 +14,7 @@ I followed him and a battle within the earth started (under the ground).
 Because the fight was extremely fun, a few days later, I created a dirt-arena for us to play.
 This was the beginning of EarthGames.
 
-[caption id="attachment_193" align="alignnone" width="300"][![](/src/assets/articles/earthgames/earthgames_beginning.png)](https://logende.org/wp-content/uploads/2021/01/First-Arena-300x155-1.png) The very first EarthGames arena[/caption]
+[caption id="attachment_193" align="alignnone" width="300"][![](/src/assets/articles/earthgames/earthgames_beginning.png)](https://logende.org/wp-content/uploads/2021/01/First-Arena-300x155-1.png) The very first EarthGames arena[/caption]
 
 The arena supported four players only and would work like the following: When all four players are ready, the game master writes "Go" in the chat.
 Then all players jump in the start-boxes of their color and equip themselves with torches, weapons, and spades, which can be found at their starting location.
