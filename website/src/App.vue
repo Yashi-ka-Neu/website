@@ -1,19 +1,9 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
   <div class="full-width">
-    <header class="full-width">
-      <div class="sidebar-container">
-        <nav>
-          <RouterLink to="/">Home</RouterLink>
-          <RouterLink to="/about">About</RouterLink>
-          <RouterLink to="/projects">Projects</RouterLink>
-          <RouterLink to="/experience">Experience</RouterLink>
-        </nav>
-      </div>
-    </header>
     <main class="full-width">
       <RouterView class="full-width" />
     </main>

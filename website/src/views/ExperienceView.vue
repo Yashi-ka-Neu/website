@@ -3,7 +3,6 @@ import workExperienceData from '@/assets/work_experiences/work_experiences.json'
 import educationData from '@/assets/education/education.json'
 import type {
   Education,
-  Project,
   WorkExperience,
 } from '@/model/data_structures'
 import WorkExperienceItem from '@/components/WorkExperienceItem.vue'
@@ -30,7 +29,7 @@ educationEntries.sort((a, b) => {
   <main>
     <div class="sections-container">
       <section>
-        <h2>Work Experience</h2>
+        <h1>Work Experience</h1>
         <div class="grid">
           <WorkExperienceItem
             v-for="workExperience in workExperienceEntries"
@@ -45,7 +44,7 @@ educationEntries.sort((a, b) => {
       </section>
 
       <section>
-        <h2>Education</h2>
+        <h1>Education</h1>
         <div class="grid">
           <EducationItem
             v-for="education in educationEntries"

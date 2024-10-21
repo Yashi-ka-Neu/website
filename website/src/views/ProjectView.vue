@@ -6,7 +6,6 @@ import MultiSelect from 'primevue/multiselect'
 import Dialog from 'primevue/dialog'
 import { computed, type Ref, ref } from 'vue'
 import MarkdownArticle from '@/components/MarkdownArticle.vue'
-import ArticleImage from '@/components/ArticleImage.vue'
 
 const projects = projectsData.projects as Project[]
 
@@ -17,10 +16,14 @@ const languages = Array.from(
   new Set(projects.flatMap(project => project.programming_language)),
 ).map(lang => ({ label: lang, value: lang }))
 const favorites = ['Yes', 'No'].map(fav => ({ label: fav, value: fav }))
+const locations = Array.from(
+  new Set(projects.map(project => project.where?.toString() || 'Leisure')),
+).map(location => ({ label: location, value: location }))
 
 const selectedSizes = ref<string[]>([])
 const selectedLanguages = ref<string[]>([])
 const selectedFavorites = ref<string[]>([])
+const selectedLocations = ref<string[]>([])
 
 const selectedArticle: Ref<string | undefined> = ref<string | undefined>(
   undefined,
@@ -48,7 +51,11 @@ const filteredProjects = computed(() => {
       (selectedFavorites.value.includes('Yes')
         ? project.favorite
         : !project.favorite)
-    return matchesSize && matchesLanguage && matchesFavorite
+
+    const matchesLocation =
+      selectedLocations.value.length === 0 ||
+      selectedLocations.value.includes(project.where?.toString() || 'Leisure')
+    return matchesSize && matchesLanguage && matchesFavorite && matchesLocation
   })
   // sort the list of projects: first prefer favorites, then by end date
   result.sort((a, b) => {
@@ -140,7 +147,7 @@ function openVideos(videos: string[], title: string) {
       </div>
     </Dialog>
 
-    <h2>Projects</h2>
+    <h1>Portfolio</h1>
     <div class="filters">
       <MultiSelect
         v-model="selectedSizes"
@@ -162,6 +169,14 @@ function openVideos(videos: string[], title: string) {
         v-model="selectedFavorites"
         :options="favorites"
         placeholder="Select favorite status"
+        optionLabel="label"
+        optionValue="value"
+        multiple
+      />
+      <MultiSelect
+        v-model="selectedLocations"
+        :options="locations"
+        placeholder="Select locations"
         optionLabel="label"
         optionValue="value"
         multiple

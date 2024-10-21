@@ -44,7 +44,8 @@
         "end": "2022-12-25"
       },
       "source_code": "https://github.com/Logende/mesa-replay",
-      "project_page": "https://github.com/Logende/mesa-replay"
+      "project_page": "https://github.com/Logende/mesa-replay",
+      "where": "University of Stuttgart"
     },
     {
       "title": "DynamicSlicing (Tool)",
@@ -57,7 +58,8 @@
         "start": "2023-11-11",
         "end": "2024-02-08"
       },
-      "source_code": "https://github.com/Logende/dynamicslicing"
+      "source_code": "https://github.com/Logende/dynamicslicing",
+      "where": "University of Stuttgart"
     },
     {
       "title": "GraphQLQueryNameConsistency (Deep Learning)",
@@ -70,7 +72,8 @@
         "start": "2023-06-13",
         "end": "2023-07-20"
       },
-      "source_code": "https://github.com/Logende/GraphQLQueryNameConsistency"
+      "source_code": "https://github.com/Logende/GraphQLQueryNameConsistency",
+      "where": "University of Stuttgart"
     },
     {
       "title": "ALC Logic App (Mobile Quiz App)",
@@ -83,7 +86,8 @@
         "start": "2022-11-03",
         "end": "2023-05-13"
       },
-      "source_code": "https://github.com/Logende/alc_logic_app"
+      "source_code": "https://github.com/Logende/alc_logic_app",
+      "where": "University of Stuttgart"
     },
     {
       "title": "BossShopPro (Plugin)",
@@ -311,6 +315,78 @@
       },
       "project_page": "https://dev.bukkit.org/projects/blockcommand",
       "video": "https://www.youtube.com/watch?v=Rl3Lw9ppvWw"
+    },
+    {
+      "title": "Simulation of CCU Communication",
+      "description": "Design and implementation of a simulation for the communication between a Connectivity Control Unit (CCU) and the backend. Developed using Java, Spring Boot and Pivotal Cloud Foundry.",
+      "favorite": true,
+      "size": "m",
+      "programming_language": ["Java"],
+      "when": {
+        "start": "2016-12-01",
+        "end": "2017-03-31"
+      },
+      "where": "Robert Bosch GmbH"
+    },
+    {
+      "title": "Internal Phishing Awareness Campaigns",
+      "description": "Development of a tool for distribution, processing and presentation of internal phishing awareness campaigns in Chicago. Developed using Python, Flask, TypeScript, VueJs, Neo4j, Docker.",
+      "favorite": false,
+      "size": "m",
+      "programming_language": ["Python", "TypeScript", "HTML"],
+      "when": {
+        "start": "2017-06-01",
+        "end": "2017-09-30"
+      },
+      "where": "Robert Bosch GmbH"
+    },
+    {
+      "title": "Pedestrian Simulation",
+      "description": "Working for Bosch Central Research. Design, implementation and evaluation of a standalone pedestrian simulator using different algorithms for pathfinding, collision avoidance and group dynamics. Implemented in Kotlin. The most promising algorithm was then implemented in the production simulation environment in C++ using ROS and Gazebo.",
+      "favorite": true,
+      "size": "l",
+      "programming_language": ["Kotlin", "C++"],
+      "when": {
+        "start": "2018-01-01",
+        "end": "2018-09-30"
+      },
+      "where": "Robert Bosch GmbH"
+    },
+    {
+      "title": "Radar Data Processing",
+      "description": "In the area of self-driving trucks, the task was to develop a radar data processing pipeline, which detects and classifies objects, based on the provided radar point cloud.",
+      "favorite": false,
+      "size": "l",
+      "programming_language": ["Python"],
+      "when": {
+        "start": "2019-10-01",
+        "end": "2021-01-31"
+      },
+      "where": "Robert Bosch GmbH"
+    },
+    {
+      "title": "Radar Calibration and Misalignment Detection",
+      "description": "Supported a driver assistance series project into start of production, working on the C++ embedded code for radar calibration and misalignment detection.",
+      "favorite": false,
+      "size": "l",
+      "programming_language": ["C++"],
+      "when": {
+        "start": "2021-02-01",
+        "end": "2022-03-31"
+      },
+      "where": "Robert Bosch GmbH"
+    },
+    {
+      "title": "Field Data Collection",
+      "description": "In the area of self-driving cars, we developed a solution for collecting, processing and tagging data of the vehicle fleet. I worked predominantly on the tooling in Python and DevOps using Github Action and the Robotframework.",
+      "favorite": false,
+      "size": "l",
+      "programming_language": ["Python","C++"],
+      "when": {
+        "start": "2022-04-01",
+        "end": "2024-11-30"
+      },
+      "where": "Robert Bosch GmbH"
     }
   ]
 }
