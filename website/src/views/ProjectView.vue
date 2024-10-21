@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import projectsData from '@/assets/projects/projects.json'
+import projectsData from '@/assets/main_projects.json'
 import type { Project } from '@/model/data_structures'
 import ProjectCard from '@/components/ProjectCard.vue'
 import MultiSelect from 'primevue/multiselect'

@@ -5,18 +5,20 @@ import vue from '@vitejs/plugin-vue'
 import vueDevTools from 'vite-plugin-vue-devtools'
 import {viteStaticCopy} from "vite-plugin-static-copy";
 
+
+const useWebsiteBasePath = process.env.USE_WEBSITE_BASE_PATH === 'true';
+
 // https://vite.dev/config/
 export default defineConfig({
-  base: '/website/',
+  base: useWebsiteBasePath ? '/website/' : '/',
   plugins: [
     vue(),
     vueDevTools(),
     viteStaticCopy({
-      structured: true,
       targets: [
         {
           src: 'src/assets/**/*',
-          dest: ''
+          dest: 'assets'
         }
       ]
     })

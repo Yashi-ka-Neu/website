@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import workExperienceData from '@/assets/work_experiences/work_experiences.json'
-import educationData from '@/assets/education/education.json'
+import workExperienceData from '@/assets/main_work_experiences.json'
+import educationData from '@/assets/main_education.json'
 import type {
   Education,
   WorkExperience,
