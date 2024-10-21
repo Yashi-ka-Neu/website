@@ -93,7 +93,7 @@
       "title": "BossShopPro (Plugin)",
       "description": "One of the most player-friendly and multifunctional server-side Minecraft GUI plugins. It has over 600,000 Downloads combined. It has a dozen of Add-Ons, enabled due to its versatile API.",
       "icon": "icon_bossshoppro.gif",
-      "article": "/bsp_article.html",
+      "article": "articles/bossshoppro/article.html",
       "source_code": "https://github.com/Blackixx/BossShopPro",
       "favorite": true,
       "when": {
