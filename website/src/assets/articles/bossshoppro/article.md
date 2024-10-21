@@ -36,7 +36,7 @@ This plugin was one of the firsts of its kind: players could not just buy items 
 As people seemed to love the concept of buying different stuff (and not just items) via their currency, I wrote another plugin named [ItemShop](https://dev.bukkit.org/projects/itemshop), having the same features, but using Items as currency, instead of points.
 The code was mostly just copied from PointShop.
 
-While I had, originally, shied away from writing a shop plugin using the regular money currency, as many money shop plugins already existed, I finally decided, to port my unique shop plugin concept to a new plugin using the regular money currency. 
+While I had, originally, shied away from writing a shop plugin using the regular money currency, as many money shop plugins already existed, I finally decided, to port my unique shop plugin concept to a new plugin using the regular money currency.
 [MoneyShop](https://dev.bukkit.org/projects/moneyshop) was born and it quickly became the most popular of the three plugins.
 
 Maybe you have noticed already: Now I had three almost identical plugins, with only the type of currency/cost differing.
@@ -64,6 +64,6 @@ BossShopPro quickly became a success. Just to show some of the reviews:
 [<img src="/src/assets/articles/bossshoppro/bsp_reviews_4.png" width="800"/>](/src/assets/articles/bossshoppro/bsp_reviews_4.png)
 
 Everything was great and I kept maintaining BossShopPro, until, at one point, I was about to graduate and start my first full-time job, which would be in the area of self-driving cars.
-This was the point, where I decided that I no longer have the capacity and time to work as a "freelancer" and sell software in my free time, let alone maintain projects of that size. 
+This was the point, where I decided that I no longer have the capacity and time to work as a "freelancer" and sell software in my free time, let alone maintain projects of that size.
 Therefore, I turned BossShopPro into a free resource and turned it open source, allowing for external developers to contribute and continue it.
 The resource is now being continued [here](https://www.spigotmc.org/resources/104824/).

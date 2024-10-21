@@ -2,36 +2,43 @@
 import type { Project } from '@/model/data_structures'
 import { formatTimeRange } from '@/utils'
 import Card from 'primevue/card'
-import {FontAwesomeIcon} from "@fortawesome/vue-fontawesome";
-import {faStar} from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
 
 const props = defineProps<{
   projectData: Project
 }>()
 
 const emit = defineEmits<{
-  (e: 'select_article', articlePath: string, title: string): void;
-  (e: 'select_videos', videos: string[], title: string): void;
-}>();
+  (e: 'select_article', articlePath: string, title: string): void
+  (e: 'select_videos', videos: string[], title: string): void
+}>()
 
-const videoOrVideos: string = props.projectData.videos ? (props.projectData.videos.length > 1 ? 'Videos' : 'Video') : "No Video";
-
+const videoOrVideos: string = props.projectData.videos
+  ? props.projectData.videos.length > 1
+    ? 'Videos'
+    : 'Video'
+  : 'No Video'
 </script>
 
 <template>
   <Card>
     <template #header>
-    <h4 style="text-align: center" v-if="projectData.where">{{projectData.where}}</h4>
+      <h4 style="text-align: center" v-if="projectData.where">
+        {{ projectData.where }}
+      </h4>
     </template>
-    <template #title>{{ projectData.title }}
-    <FontAwesomeIcon v-if="projectData.favorite" :icon="faStar"></FontAwesomeIcon>
+    <template #title
+      >{{ projectData.title }}
+      <FontAwesomeIcon
+        v-if="projectData.favorite"
+        :icon="faStar"
+      ></FontAwesomeIcon>
     </template>
     <template #subtitle>
       {{ formatTimeRange(projectData.when) }}
       <div>
-        <span
-          class="badge-size"
-        >
+        <span class="badge-size">
           {{ projectData.size }}
         </span>
         <span
@@ -48,13 +55,20 @@ const videoOrVideos: string = props.projectData.videos ? (props.projectData.vide
         {{ projectData.description }}
       </p>
 
-      <img v-if="projectData.icon" alt="user header" :src="projectData.icon" style="max-width: 350px" />
+      <img
+        v-if="projectData.icon"
+        alt="user header"
+        :src="projectData.icon"
+        style="max-width: 350px"
+      />
     </template>
     <template #footer>
       <div class="flex gap-4 mt-1">
         <a
           v-if="projectData.article"
-          @click="emit('select_article', projectData.article, projectData.title)"
+          @click="
+            emit('select_article', projectData.article, projectData.title)
+          "
           target="_blank"
           title="Read Article"
         >
@@ -94,11 +108,17 @@ const videoOrVideos: string = props.projectData.videos ? (props.projectData.vide
         </a>
         <a
           v-if="projectData.videos"
-          @click="emit('select_videos', projectData.videos, projectData.title + ' ' + videoOrVideos)"
+          @click="
+            emit(
+              'select_videos',
+              projectData.videos,
+              projectData.title + ' ' + videoOrVideos,
+            )
+          "
           target="_blank"
           title="Watch Video"
         >
-          <span class="badge-link">Watch {{videoOrVideos}}</span>
+          <span class="badge-link">Watch {{ videoOrVideos }}</span>
         </a>
       </div>
     </template>
@@ -117,7 +137,6 @@ const videoOrVideos: string = props.projectData.videos ? (props.projectData.vide
   display: flex;
   flex-direction: column;
 }
-
 
 .badge {
   display: inline-block;
@@ -148,6 +167,4 @@ const videoOrVideos: string = props.projectData.videos ? (props.projectData.vide
   font-weight: 600;
   border-radius: 0.25rem;
 }
-
-
 </style>

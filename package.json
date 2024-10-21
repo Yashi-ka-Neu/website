@@ -6,6 +6,8 @@
     "@fortawesome/free-solid-svg-icons": "^6.6.0",
     "@fortawesome/vue-fontawesome": "^3.0.8",
     "@primevue/themes": "^4.1.0",
-    "primevue": "^4.1.0"
+    "@vue/runtime-dom": "^3.5.12",
+    "primevue": "^4.1.0",
+    "vue-markdown-render": "^2.2.1"
   }
 }

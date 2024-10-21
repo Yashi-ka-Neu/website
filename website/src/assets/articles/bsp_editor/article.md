@@ -30,7 +30,6 @@ I named it [BossShopConfigure](https://bukkit.org/threads/gui-admin-bossshopconf
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ahyp1uYGgp8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-
 [<img src="/src/assets/articles/bsp_editor/bspc_overview.png" width="600"/>](/src/assets/articles/bsp_editor/bspc_overview.png)
 
 _BossShopConfigure GUI tool - Main menu with entry "BossSword" of shop "BuyShop" being selected_
@@ -110,17 +109,17 @@ This is exactly would we did, resulting in a quite intuitive and powerful, yet s
 
 _BossShopProEditor web app - main page with the "Configuration" section and the "Configuration Assistant" section_
 
-_[<img src="/src/assets/articles/bsp_editor/bspe_shopitem.png" width="600"/>](src/assets/articles/bsp_editor/bspe_shopitem.png)
+\_[<img src="/src/assets/articles/bsp_editor/bspe_shopitem.png" width="600"/>](src/assets/articles/bsp_editor/bspe_shopitem.png)
 
-BossShopProEditor web app - "Configuration Assistant" dynamically shows the currently selected entry of the config_
+BossShopProEditor web app - "Configuration Assistant" dynamically shows the currently selected entry of the config\_
 
-_[<img src="/src/assets/articles/bsp_editor/bspe_autocomplete.png" width="350"/>](/src/assets/articles/bsp_editor/bspe_autocomplete.png)
+\_[<img src="/src/assets/articles/bsp_editor/bspe_autocomplete.png" width="350"/>](/src/assets/articles/bsp_editor/bspe_autocomplete.png)
 
-BossShopProEditor web app - Neat features, such as auto-completion_
+BossShopProEditor web app - Neat features, such as auto-completion\_
 
-[_<img src="/src/assets/articles/bsp_editor/bspe_colorcode.png" width="500"/>](/src/assets/articles/bsp_editor/bspe_colorcode.png)
+[\_<img src="/src/assets/articles/bsp_editor/bspe_colorcode.png" width="500"/>](/src/assets/articles/bsp_editor/bspe_colorcode.png)
 
-BossShopProEditor web app - Preview of formatting_
+BossShopProEditor web app - Preview of formatting\_
 
 ### Honorable mentions
 

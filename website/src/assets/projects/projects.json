@@ -7,21 +7,17 @@
       "publication": "https://link.springer.com/article/10.1007/s13222-024-00472-7",
       "icon": "/src/assets/icon_metaconfigurator.gif",
       "size": "l",
-      "programming_language": [
-        "TypeScript",
-        "HTML"
-      ],
+      "programming_language": ["TypeScript", "HTML"],
       "when": {
         "start": "2023-04-20",
         "end": "2025-12-31"
       },
+      "article": "/src/assets/articles/test.md",
       "where": "University of Stuttgart",
       "source_code": "https://github.com/MetaConfigurator/meta-configurator",
       "project_page": "https://github.com/MetaConfigurator/meta-configurator",
       "demo": "https://metaconfigurator.github.io/meta-configurator/data",
-      "videos": [
-        "1HT0Xb8tGUI"
-      ]
+      "videos": ["1HT0Xb8tGUI"]
     },
     {
       "title": "ManaWars (Mobile Game)",
@@ -29,30 +25,20 @@
       "icon": "/src/assets/icon_manawars.gif",
       "favorite": true,
       "size": "xl",
-      "programming_language": [
-        "Java",
-        "Kotlin",
-        "Android"
-      ],
+      "programming_language": ["Java", "Kotlin", "Android"],
       "when": {
         "start": "2014-01-01",
         "end": "2017-12-31"
       },
-      "videos": [
-        "py2VAddQ08c",
-        "gtbftSCVcBA",
-        "eI4PvR8_jdI"
-      ],
-      "article": "/src/assets/articles/manawars/article.md"
+      "videos": ["py2VAddQ08c", "gtbftSCVcBA", "eI4PvR8_jdI"],
+      "article": "/src/assets/articles/manawars/article.html"
     },
     {
       "title": "MesaReplay (Tool Extension)",
       "description": "Enables caching simulations of mesa (simulation framework) models, persisting them on the file system and replaying them later.",
       "favorite": true,
       "size": "xs",
-      "programming_language": [
-        "Python"
-      ],
+      "programming_language": ["Python"],
       "when": {
         "start": "2022-12-22",
         "end": "2022-12-25"
@@ -66,9 +52,7 @@
       "favorite": false,
       "size": "s",
       "icon": "/src/assets/icon_slicing.png",
-      "programming_language": [
-        "Python"
-      ],
+      "programming_language": ["Python"],
       "when": {
         "start": "2023-11-11",
         "end": "2024-02-08"
@@ -81,9 +65,7 @@
       "favorite": false,
       "icon": "/src/assets/icon_graphqlconsistency.png",
       "size": "s",
-      "programming_language": [
-        "Python"
-      ],
+      "programming_language": ["Python"],
       "when": {
         "start": "2023-06-13",
         "end": "2023-07-20"
@@ -96,11 +78,7 @@
       "favorite": false,
       "size": "s",
       "icon": "/src/assets/icon_alc_logic_app.png",
-      "programming_language": [
-        "Flutter/Dart",
-        "GoLang",
-        "Android"
-      ],
+      "programming_language": ["Flutter/Dart", "GoLang", "Android"],
       "when": {
         "start": "2022-11-03",
         "end": "2023-05-13"
@@ -111,7 +89,7 @@
       "title": "BossShopPro (Plugin)",
       "description": "One of the most player-friendly and multifunctional server-side Minecraft GUI plugins. It has over 600,000 Downloads combined. It has a dozen of Add-Ons, enabled due to its versatile API.",
       "icon": "/src/assets/icon_bossshoppro.gif",
-      "article": "/src/assets/articles/bossshoppro/article.md",
+      "article": "/src/assets/articles/bossshoppro/article.html",
       "source_code": "https://github.com/Blackixx/BossShopPro",
       "favorite": true,
       "when": {
@@ -119,31 +97,22 @@
         "end": "2020-07-01"
       },
       "size": "l",
-      "programming_language": [
-        "Java"
-      ],
+      "programming_language": ["Java"],
       "project_page": "https://www.spigotmc.org/resources/222/",
-      "videos": [
-        "SgTBXMgOLk4",
-        "vx7YC4GCao4",
-        "ahyp1uYGgp8",
-        "XcafjVUTN8s"
-      ]
+      "videos": ["SgTBXMgOLk4", "vx7YC4GCao4", "ahyp1uYGgp8", "XcafjVUTN8s"]
     },
     {
       "title": "EarthGames (Minigame)",
       "description": "A Minecraft Minigame that I have invented, developed, and published to thousands of players via the Snapcraft gaming network from the Netherlands. At its peak, different Youtubers, who now have over 50 Million subscribers combined, have played and enjoyed EarthGames.",
       "icon": "/src/assets/icon_earthgames.png",
-      "article": "/src/assets/articles/earthgames/article.md",
+      "article": "/src/assets/articles/earthgames/article.html",
       "favorite": true,
       "when": {
         "start": "2012-10-19",
         "end": "2014-08-13"
       },
       "size": "m",
-      "programming_language": [
-        "Java"
-      ],
+      "programming_language": ["Java"],
       "videos": [
         "6CYQ7yjqaNQ",
         "923TrDl9CCk",
@@ -160,19 +129,15 @@
       "title": "ZombieV (Minigame)",
       "description": "ZombieV is a Minecraft Minigame that I have invented, developed, and published to thousands of players via the Snapcraft gaming network from the Netherlands. The concept is simple: players fight together against pre-defined waves of crazy enemies. By killing those enemies, they get money, which they can invest and stronger armor, weapons, and some other special perks. Besides a lot of crazy fun elements (items like grenades, an interactive map which, for example, changes over the course of the game, and boss waves) players could also use the equipment they unlocked to challenge other players in a 1v1 fight.",
       "icon": "/src/assets/icon_zombiev.png",
-      "article": "/src/assets/articles/zombiev/article.md",
+      "article": "/src/assets/articles/zombiev/article.html",
       "favorite": true,
       "when": {
         "start": "2012-10-19",
         "end": "2014-08-13"
       },
       "size": "m",
-      "programming_language": [
-        "Java"
-      ],
-      "videos": [
-        "IZhnWrk9BYc"
-      ],
+      "programming_language": ["Java"],
+      "videos": ["IZhnWrk9BYc"],
       "where": "Snapcraft/Fironus"
     },
     {
@@ -181,10 +146,7 @@
       "description": "Automated Drone Path Planning and Animal Detection. A drone that can autonomously fly over a field and detect animals. The DJI Matrice 100 drone is equipped with a thermal camera and the live footage sent to the phone. The mobile app on the phone uses image processing with OpenCV to detect animals. All spotted animals are marked on the map. Jointly developed with a fellow student.",
       "favorite": false,
       "size": "m",
-      "programming_language": [
-        "Java",
-        "Android"
-      ],
+      "programming_language": ["Java", "Android"],
       "when": {
         "start": "2019-03-02",
         "end": "2019-05-26"
@@ -201,14 +163,11 @@
         "end": "2020-03-07"
       },
       "size": "s",
-      "programming_language": [
-        "TypeScript",
-        "HTML"
-      ],
+      "programming_language": ["TypeScript", "HTML"],
       "project_page": "https://www.spigotmc.org/resources/bossshoppro-editor.64777/",
       "source_code": "https://github.com/Logende/BossShopProEditor",
       "demo": "https://logende.github.io/BossShopProEditor/#/",
-      "article": "/src/assets/articles/bsp_editor/article.md"
+      "article": "/src/assets/articles/bsp_editor/article.html"
     },
     {
       "title": "BSPConfigure (Desktop Tool)",
@@ -220,9 +179,7 @@
         "end": "2017-12-09"
       },
       "size": "m",
-      "programming_language": [
-        "Java"
-      ],
+      "programming_language": ["Java"],
       "project_page": "https://www.spigotmc.org/resources/bossshopproconfigure-configuration-and-setup-tool.28791/"
     },
     {
@@ -235,13 +192,9 @@
         "end": "2013-11-11"
       },
       "size": "m",
-      "programming_language": [
-        "Java"
-      ],
-      "videos": [
-        "uvSfB7L9z-Q"
-      ],
-      "article": "/src/assets/articles/manawar/article.md"
+      "programming_language": ["Java"],
+      "videos": ["uvSfB7L9z-Q"],
+      "article": "/src/assets/articles/manawar/article.html"
     },
     {
       "title": "War (Minigame)",
@@ -249,23 +202,19 @@
       "favorite": false,
       "icon": "/src/assets/icon_war_plugin.png",
       "size": "l",
-      "programming_language": [
-        "Java"
-      ],
+      "programming_language": ["Java"],
       "when": {
         "start": "2012-05-01",
         "end": "2013-06-18"
       },
-      "article": "/src/assets/articles/war/article.md"
+      "article": "/src/assets/articles/war/article.html"
     },
     {
       "title": "LimitedUses (BSP Addon)",
       "description": "An addon for the server-side Minecraft plugin BossShopPro, introducing the ability to limit how often a BSP item can be used.",
       "favorite": false,
       "size": "xs",
-      "programming_language": [
-        "Java"
-      ],
+      "programming_language": ["Java"],
       "when": {
         "start": "2016-07-12",
         "end": "2018-09-28"
@@ -278,9 +227,7 @@
       "description": "An addon for the server-side Minecraft plugin BossShopPro. Using this plugin players will be able to create their own virtual shop, where they can sell their items. They will be able to browse around in a public shop listing, check out other shops and purchase items from other players.",
       "favorite": false,
       "size": "s",
-      "programming_language": [
-        "Java"
-      ],
+      "programming_language": ["Java"],
       "when": {
         "start": "2016-09-21",
         "end": "2020-02-28"
@@ -293,9 +240,7 @@
       "description": "An addon for the server-side Minecraft plugin BossShopPro. Using BossShopPro API and a very simple user configuration file, it creates advanced buy and sell shops for the players.",
       "favorite": false,
       "size": "xs",
-      "programming_language": [
-        "Java"
-      ],
+      "programming_language": ["Java"],
       "when": {
         "start": "2016-07-19",
         "end": "2018-09-28"
@@ -308,9 +253,7 @@
       "description": "An addon for the server-side Minecraft plugin BossShopPro. Adds support for more currencies.",
       "favorite": false,
       "size": "xs",
-      "programming_language": [
-        "Java"
-      ],
+      "programming_language": ["Java"],
       "when": {
         "start": "2016-07-12",
         "end": "2018-09-28"
@@ -323,9 +266,7 @@
       "description": "An addon for the server-side Minecraft plugin BossShopPro. Adds support for opening a GUI not only with a command but also by clicking custom items.",
       "favorite": false,
       "size": "xs",
-      "programming_language": [
-        "Java"
-      ],
+      "programming_language": ["Java"],
       "when": {
         "start": "2016-07-12",
         "end": "2018-09-28"
@@ -338,9 +279,7 @@
       "description": "A server-side Minecraft plugin that enables players to promote themselves if they meet certain criteria. Has more than 50,000 Downloads.",
       "favorite": false,
       "size": "m",
-      "programming_language": [
-        "Java"
-      ],
+      "programming_language": ["Java"],
       "when": {
         "start": "2012-01-26",
         "end": "2016-04-26"
@@ -352,9 +291,7 @@
       "description": "A server-side Minecraft plugin that introduces a second currency: Points. Has more than 150,000 Downloads. Now maintained by Mitsugaru.",
       "favorite": false,
       "size": "s",
-      "programming_language": [
-        "Java"
-      ],
+      "programming_language": ["Java"],
       "when": {
         "start": "2012-03-21",
         "end": "2016-03-06"
@@ -367,9 +304,7 @@
       "description": "A server-side Minecraft plugin that allows assigning commands to blocks, triggering them on touch or interactions. Has more than 20,000 Downloads.",
       "favorite": false,
       "size": "s",
-      "programming_language": [
-        "Java"
-      ],
+      "programming_language": ["Java"],
       "when": {
         "start": "2012-04-07",
         "end": "2016-09-11"

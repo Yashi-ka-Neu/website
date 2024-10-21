@@ -17,13 +17,7 @@
         },
         "size": {
           "type": "string",
-          "enum": [
-            "xs",
-            "s",
-            "m",
-            "l",
-            "xl"
-          ]
+          "enum": ["xs", "s", "m", "l", "xl"]
         },
         "programming_language": {
           "type": "array",
@@ -62,7 +56,7 @@
           "format": "uri"
         },
         "article": {
-          "type": "string",
+          "type": "string"
         },
         "demo": {
           "type": "string",
@@ -80,13 +74,7 @@
           "format": "uri"
         }
       },
-      "required": [
-        "title",
-        "description",
-        "size",
-        "favorite",
-        "when"
-      ]
+      "required": ["title", "description", "size", "favorite", "when"]
     },
     "TimeRange": {
       "type": "object",

@@ -10,17 +10,20 @@ import WorkExperienceItem from '@/components/WorkExperienceItem.vue'
 import EducationItem from '@/components/EducationItem.vue'
 
 const workExperienceEntries =
-  (workExperienceData.work_experiences as WorkExperience[])
-const educationEntries = (educationData.education as Education[])
+  workExperienceData.work_experiences as WorkExperience[]
+const educationEntries = educationData.education as Education[]
 
 // sort work experience and education entries by date in descending order
 workExperienceEntries.sort((a, b) => {
-  return new Date(b.timeRange.end).getTime() - new Date(a.timeRange.end).getTime()
+  return (
+    new Date(b.timeRange.end).getTime() - new Date(a.timeRange.end).getTime()
+  )
 })
 educationEntries.sort((a, b) => {
-  return new Date(b.timeRange.end).getTime() - new Date(a.timeRange.end).getTime()
+  return (
+    new Date(b.timeRange.end).getTime() - new Date(a.timeRange.end).getTime()
+  )
 })
-
 </script>
 
 <template>

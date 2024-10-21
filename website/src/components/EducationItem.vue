@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import type {
-  Education,
-} from '@/model/data_structures'
+import type { Education } from '@/model/data_structures'
 import Image from 'primevue/image'
 import { formatTimeRange } from '../utils'
 
@@ -40,14 +38,14 @@ defineProps<{
         {{ educationData.description }}
       </span>
 
-      <br/>
+      <br />
       <span
         v-if="educationData.programming_language"
         v-for="language in educationData.programming_language"
         class="badge"
       >
-          <span style="padding-right: 10px">{{ language }}</span>
-        </span>
+        <span style="padding-right: 10px">{{ language }}</span>
+      </span>
     </div>
   </div>
 </template>
@@ -120,8 +118,6 @@ i {
 .item:last-of-type:after {
   display: none;
 }
-
-
 
 .badge {
   display: inline-block;

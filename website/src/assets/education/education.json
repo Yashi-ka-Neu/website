@@ -12,9 +12,7 @@
         "start": "2016-06-28",
         "end": "2008-09-01"
       },
-      "programming_language": [
-        "Java"
-      ]
+      "programming_language": ["Java"]
     },
     {
       "role": "Bachelors Student",
@@ -50,18 +48,18 @@
       "grade": 1.5,
       "degree": "Master of Science",
       "subject": "Software Engineering",
-        "programming_language": [
-            "Kotlin",
-            "Python",
-            "TypeScript",
-            "HTML",
-            "C++",
-            "Flutter/Dart",
-            "GoLang",
-            "R",
-            "Android",
-            "CI/CD"
-        ]
+      "programming_language": [
+        "Kotlin",
+        "Python",
+        "TypeScript",
+        "HTML",
+        "C++",
+        "Flutter/Dart",
+        "GoLang",
+        "R",
+        "Android",
+        "CI/CD"
+      ]
     }
   ]
 }

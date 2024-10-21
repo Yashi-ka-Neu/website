@@ -36,14 +36,14 @@ defineProps<{
         {{ workExperienceData.description }}
       </span>
 
-      <br/>
+      <br />
       <span
         v-if="workExperienceData.programming_language"
         v-for="language in workExperienceData.programming_language"
         class="badge"
       >
-          <span style="padding-right: 10px">{{ language }}</span>
-        </span>
+        <span style="padding-right: 10px">{{ language }}</span>
+      </span>
     </div>
   </div>
 </template>
@@ -117,7 +117,6 @@ i {
 .item:last-of-type:after {
   display: none;
 }
-
 
 .badge {
   display: inline-block;

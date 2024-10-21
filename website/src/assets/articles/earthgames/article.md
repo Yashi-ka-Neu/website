@@ -1,8 +1,11 @@
 EarthGames is a Minecraft Minigame that I have invented, developed, and published to thousands of players via the Snapcraft gaming network from the Netherlands.
 At its peak, different Youtubers, who now have over 50 Million subscribers combined, have played and enjoyed EarthGames.
 
-[caption id="attachment_443" align="alignnone" width="900"][![](/src/assets/articles/earthgames/earthgames_1.png)](https://logende.org/wp-content/uploads/2021/01/2013-05-17_15.03.00.png)Team blue and red fighting[/caption]
-[caption id="attachment_444" align="alignnone" width="900"][![](/src/assets/articles/earthgames/earthgames_2.png)](https://logende.org/wp-content/uploads/2021/01/2013-05-19_11.56.44.png)Team blue defending their base[/caption]
+[<img src="/src/assets/articles/earthgames/earthgames_1.png" width="800"/>](/src/assets/articles/earthgames/earthgames_1.png)
+
+Team blue and red fighting
+
+[caption id="attachment_444" align="alignnone" width="900"]![](/src/assets/articles/earthgames/earthgames_2.png)](https://logende.org/wp-content/uploads/2021/01/2013-05-19_11.56.44.png)Team blue defending their base[/caption]
 
 ## History
 
@@ -14,7 +17,7 @@ I followed him and a battle within the earth started (under the ground).
 Because the fight was extremely fun, a few days later, I created a dirt-arena for us to play.
 This was the beginning of EarthGames.
 
-[caption id="attachment_193" align="alignnone" width="300"][![](/src/assets/articles/earthgames/earthgames_beginning.png)](https://logende.org/wp-content/uploads/2021/01/First-Arena-300x155-1.png) The very first EarthGames arena[/caption]
+[caption id="attachment_193" align="alignnone" width="300"]![](/src/assets/articles/earthgames/earthgames_beginning.png)](https://logende.org/wp-content/uploads/2021/01/First-Arena-300x155-1.png) The very first EarthGames arena[/caption]
 
 The arena supported four players only and would work like the following: When all four players are ready, the game master writes "Go" in the chat.
 Then all players jump in the start-boxes of their color and equip themselves with torches, weapons, and spades, which can be found at their starting location.
@@ -60,6 +63,5 @@ This was planned and executed within around one week, which was important to kee
 Oh, and some big Youtubers were invited and played the game :)
 
 [caption id="attachment_198" align="alignnone" width="900"]![](/src/assets/articles/earthgames/earthgames_youtubers.png)The popular Youtubers CaptainSparklez, SkythekidRS, Sethbling, AntVenom and Deadlox check out EarthGames[/caption]
-
 
 In August 2013 I stopped playing the game Minecraft, but, of course, Snapcraft does keep the minigames and now pays other developers to update and maintain the plugins.
