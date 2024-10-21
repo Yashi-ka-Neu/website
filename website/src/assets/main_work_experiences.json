@@ -4,7 +4,7 @@
       "role": "Software Developer and Administrator",
       "organization": "Fironus",
       "location": "Remote",
-      "icon": "/src/assets/icon_fironus.webp",
+      "icon": "/icon_fironus.webp",
       "timeRange": {
         "start": "2013-06-18",
         "end": "2016-06-01"
@@ -16,7 +16,7 @@
       "role": "Dual Student",
       "organization": "Robert Bosch GmbH",
       "location": "Stuttgart, Chicago, Renningen",
-      "icon": "/src/assets/icon_bosch.jpeg",
+      "icon": "/icon_bosch.jpeg",
       "timeRange": {
         "start": "2016-10-01",
         "end": "2019-09-30"
@@ -33,7 +33,7 @@
     },
     {
       "role": "Algorithm and Perception Developer",
-      "icon": "/src/assets/icon_bosch.jpeg",
+      "icon": "/icon_bosch.jpeg",
       "organization": "Robert Bosch GmbH",
       "location": "Stuttgart",
       "timeRange": {
@@ -45,7 +45,7 @@
     },
     {
       "role": "Software Engineer (Part Time)",
-      "icon": "/src/assets/icon_bosch.jpeg",
+      "icon": "/icon_bosch.jpeg",
       "organization": "Robert Bosch GmbH",
       "location": "Stuttgart",
       "timeRange": {
