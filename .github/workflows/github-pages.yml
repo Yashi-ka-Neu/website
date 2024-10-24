@@ -15,7 +15,7 @@ jobs:
 
       - name: Install and Build
         env:
-          USE_WEBSITE_BASE_PATH: true  # Set to true for GitHub Pages deployment
+          USE_WEBSITE_BASE_PATH: false  # Set to true for GitHub Pages deployment
         run: |
           cd website
           npm ci
