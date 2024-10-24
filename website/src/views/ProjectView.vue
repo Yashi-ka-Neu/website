@@ -176,7 +176,7 @@ function openVideos(videos: string[], title: string) {
       <MultiSelect
         v-model="selectedLocations"
         :options="locations"
-        placeholder="Select locations"
+        placeholder="Select affiliations"
         optionLabel="label"
         optionValue="value"
         multiple

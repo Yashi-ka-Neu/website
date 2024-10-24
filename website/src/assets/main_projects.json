@@ -12,7 +12,6 @@
         "start": "2023-04-20",
         "end": "2025-12-31"
       },
-      "article": "articles/test.md",
       "where": "University of Stuttgart",
       "source_code": "https://github.com/MetaConfigurator/meta-configurator",
       "project_page": "https://github.com/MetaConfigurator/meta-configurator",

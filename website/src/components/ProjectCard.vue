@@ -118,7 +118,7 @@ const videoOrVideos: string = props.projectData.videos
           target="_blank"
           title="Watch Video"
         >
-          <span class="badge-link">Watch {{ videoOrVideos }}</span>
+          <span class="badge-link">Watch {{ videoOrVideos }} ({{ projectData.videos.length}})</span>
         </a>
       </div>
     </template>
