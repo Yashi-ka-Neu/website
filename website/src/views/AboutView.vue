@@ -27,32 +27,48 @@
     <br />
 
     <h3>
-      Hi, I'm <strong>Felix Neubauer</strong>, a software engineer based in
-      Germany.
+      Hi, I'm <b>Felix Neubauer</b>, a software engineer based in Germany with a
+      passion for crafting well-architected, high-quality software.
 
       <br />
 
-      I started programming in Java 2012 and have since then completed my
-      Bachelors and Masters degree in Software Engineering. Since 2019 I am
-      working as a software engineer professionally in the area of self-driving
-      cars for Robert Bosch GmbH. At work I use mainly C++ for the embedded code
-      for the vehicle, Python for tooling, or develop CI/CD pipelines. In
-      research and free time projects I use mostly Kotlin/Java and TypeScript. I
-      am interested in software architecture, clean code, testing, DevOps and
-      API design.
+      I started programming in Java in 2012 and have since earned both my
+      <b>Bachelor’s and Master’s degrees in Software Engineering</b>. After
+      working at <b>Robert Bosch GmbH from 2019 to 2024</b> — developing
+      software for self-driving cars with <b>C++ for embedded systems</b>,
+      <b>Python-based tooling</b>, and <b>CI/CD pipelines</b> — I have now
+      transitioned to full-time research as part of my <b>PhD</b>.
 
       <br />
 
-      Before my full-time job, I have already earned money as a freelancer and
-      with selling my Java software. My free-time projects have more than a
-      million downloads combined and one of my Java minigames (plugin) has been
-      played and recorded by Youtubers with more than 50 Million subscribers
-      combined.
+      Beyond my research, I love experimenting with
+      <b>Kotlin, Java, and TypeScript</b>, focusing on
+      <b>software architecture</b>, <b>clean code</b>, <b>testing</b>,
+      <b>DevOps</b>, and <b>API design</b>. My open-source projects have
+      accumulated over a <b>million downloads</b>, and one of my Java minigames
+      was featured by YouTubers with a combined audience of over 50 million
+      subscribers.
+
+      <br />
+
+      Before transitioning to a full-time industry and then research job, I
+      worked as a freelancer and sold my own Java software. Now, I continue to
+      build impactful software—most recently, <b>MetaConfigurator</b>, a schema
+      editor and form generator for JSON and YAML, developed as part of my
+      master’s thesis.
+
+      <br />
+      Want to learn more? Check out my projects and research below! 🚀
     </h3>
   </div>
 </template>
 
-<style></style>
+<style>
+.about b {
+  font-weight: 500;
+}
+</style>
+
 <script setup lang="ts">
 import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram'

@@ -380,7 +380,7 @@
       "description": "In the area of self-driving cars, we developed a solution for collecting, processing and tagging data of the vehicle fleet. I worked predominantly on the tooling in Python and DevOps using Github Action and the Robotframework.",
       "favorite": false,
       "size": "l",
-      "programming_language": ["Python","C++"],
+      "programming_language": ["Python", "C++"],
       "when": {
         "start": "2022-04-01",
         "end": "2024-11-30"

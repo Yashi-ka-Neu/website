@@ -1,10 +1,7 @@
 <script setup lang="ts">
 import workExperienceData from '@/assets/main_work_experiences.json'
 import educationData from '@/assets/main_education.json'
-import type {
-  Education,
-  WorkExperience,
-} from '@/model/data_structures'
+import type { Education, WorkExperience } from '@/model/data_structures'
 import WorkExperienceItem from '@/components/WorkExperienceItem.vue'
 import EducationItem from '@/components/EducationItem.vue'
 
